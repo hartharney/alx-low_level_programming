@@ -3,8 +3,7 @@
 /**
 *  You should produce the exact same output as in th example
 *  Warnings are allowed
-*
-*  Your program should return 0
+*  Your program should return: 0
 */
 int main(void)
 {
@@ -13,7 +12,6 @@ int main(void)
 	long li;
 	long long lli;
 	float f;
-
 	printf("size of a character: %ld byte(s)\n", sizeof(c));
 	printf("size of an int: %ld byte(s)\n", sizeof(i));
 	printf("size of a long: %ld byte(s)\n", sizeof(li));
