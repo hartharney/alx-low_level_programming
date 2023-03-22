@@ -1,12 +1,14 @@
 #include <stdio.h>
 
 /** 
-*  main - A test c file using printf function
-*  Return - zero signifying program success
-*/
+ * main - A test c file using printf function
+ *
+ * Description: Using the main function
+ * this program prints with proper grammar, but the outcome is a piece of art,
+ * Return : 0
+ */
 int main(void)
 {
-	printf("With proper grammar, but the outcome is a piece of art,\n");
-
+	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
 }
