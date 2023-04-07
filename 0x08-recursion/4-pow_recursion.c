@@ -5,7 +5,7 @@
  * @x: x represents base
  * @y: y represents exponent
  *
- * Return: Always 0 (success)
+ * Return: return value of x (success)
  */
 int _pow_recursion(int x, int y)
 {
@@ -13,23 +13,16 @@ int _pow_recursion(int x, int y)
 	{
 		return (0);
 	}
-	if ( x != 0)
+	if (y < 0)
 	{
-		if (y < 0)
-		{
-			return (-1);
-		}
-		if (y == 0)
-		{
-			return (0);
-		}
-		else
-		{
-			return (x * _pow_recursion(x, y - 1));
-		}
+		return (-1);
+	}
+	if (y == 0)
+	{
+		return (1);
 	}
 	else
 	{
-		return (0);
+		return (x * _pow_recursion(x, y - 1));
 	}
 }
