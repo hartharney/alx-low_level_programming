@@ -1,15 +1,14 @@
 #include "main.h"
 
 /**
- * factorial - function that calculates the factorial
- * of a given number
- * @n - factorial number passed as parameter
+ * factorial - function that calculates the factorial of a given number
+ * @n: factorial number passed as parameter
  *
  * Return: Always 0 (success);
  */
 int factorial(int n)
 {
-	if (n == 0)
+	if (n <= 0)
 	{
 		return (0);
 	}
