@@ -2,11 +2,11 @@
 
 /**
  * _strlen - function that returns lenght of string
- * @s: string to be measured
+ * @s: represents string whose length is measured
  *
  * Return: Always 0 (sucess)
  */
-int _strlen(char *s)
+int _strlen_recursion(char *s)
 {
 	int i = 0;
 
