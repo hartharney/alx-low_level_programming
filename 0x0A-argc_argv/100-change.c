@@ -16,7 +16,7 @@ int __attribute__((unused)) main(int argc, char *argv[])
 	int cents = 0;
 	int cash = atoi(argv[1]);
 
-	if (argc != 2)
+	if (argc != 2 || (cash < '0' && cash > '9'))
 	{
 		printf("Error\n");
 		return (1);
@@ -28,7 +28,7 @@ int __attribute__((unused)) main(int argc, char *argv[])
 	}
 	for (i = 0; i < 5; i++)
 	{
-		if (cash >= coin_values[i])
+		if (cash >= coin_values[i] && (*argv[i] != '\0'))
 		{
 			cents += cash / coin_values[i];
 			cash = cash % coin_values[i];
