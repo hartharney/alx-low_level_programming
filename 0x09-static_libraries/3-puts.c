@@ -7,7 +7,7 @@
  *
  * Return: string
  */
-void _puts(const char* str) 
+void _puts(const char *str)
 {
 	while (*str != '\0')
 	{
