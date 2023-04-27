@@ -44,7 +44,9 @@ int op_mul(int a, int b)
  */
 int op_div(int a, int b)
 {
-	return (b == 0 ? 0 : a / b);
+	if (b == 0)
+		return (-1);
+	return (a / b);
 }
 
 /**
@@ -52,9 +54,11 @@ int op_div(int a, int b)
  * @a: first operand
  * @b: second operand
  *
- * Return: 0 for division or modulus by zero
+ * Return: remainder of op_div
  */
 int op_mod(int a, int b)
 {
-	return (b == 0 ? 0 : a % b);
+	if (b == 0)
+		return (-1);
+	return (a % b);
 }
