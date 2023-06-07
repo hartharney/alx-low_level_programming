@@ -3,8 +3,8 @@
 #include "main.h"
 
 /**
- * _puts_recursion – function prints a string followed by a new line
- * @s: string to be printed by function
+ * _puts_recursion - this function prints a string using putchar
+ * @s: string to be evaluated
  *
  * Return: new string
  */
